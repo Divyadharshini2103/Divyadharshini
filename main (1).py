@@ -1,10 +1,13 @@
-n = input("Please enter year:")
-year = int (n)
-if (year%400 == 0):
-          print("%d is a Leap Year" %year)
-elif (year%100 == 0):
-          print("%d is Not the Leap Year" %year)
-elif (year%4 == 0):
-          print("%d is a Leap Year" %year)
+#Write a program that determines whether a year entered by the user is a leap year or not using ifelif-else statements.
+
+
+year=int(input("Enter a Year:"))
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
+
+
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
+
 else:
-          print("%d is Not the Leap Year" %year)
+    print("{0} is not a leap year".format(year))
